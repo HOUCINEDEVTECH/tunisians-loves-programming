@@ -7,25 +7,21 @@ top.title(" calaculator")
 top.minsize("300",300)
 
 # Les Entres
-number1Label = Label( text="first number")
+number1Label = Label( text="ENTRE N")
 number1Label.pack()
 number1Entry = Entry()
 number1Entry.pack()
 
-number2Label = Label( text = " seconde numnber")
-number2Label.pack()
-number2Entry = Entry()
-number2Entry.pack()
-# operation de calcul
-def AddNum() :
 
-    num1 =float(number1Entry.get())
-    num2 = float(number2Entry.get())
-    res= num1+num2
+# operation de calcul
+def DOUBELNUM() :
+
+    num1 =  float(number1Entry.get())
+    res = num1*2
     resultLabel = Label(text =" the result is "  + str(res))
     resultLabel.pack()
 # Affichage de resultat
-but = Button ( text =" Add" , command= AddNum)
+but = Button ( text =" VALIDER L OPERATION " , command= DOUBELNUM )
 
 but.pack()
 
